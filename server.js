@@ -2,16 +2,16 @@
 // ARQUIVO: server.js (Versão Final e Consolidada)
 // ===================================================
 
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 dotenv.config();
-import express from "express";
-import mysql from "mysql2/promise";
-import cors from "cors";
-import bcrypt from "bcrypt";
-import multer from "multer";
-import path from "path";
-import { fileURLToPath } from "url";
-import fs from "fs"; // Importando o 'fs' no topo
+const express = require("express");
+const mysql = require("mysql2/promise");
+const cors = require("cors");
+const bcrypt = require("bcrypt");
+const multer = require("multer");
+const path = require("path");
+const fs = require("fs");
+const { fileURLToPath } = require("url");
 
 // --- 1. CONFIGURAÇÃO INICIAL ---
 const __filename = fileURLToPath(import.meta.url);
