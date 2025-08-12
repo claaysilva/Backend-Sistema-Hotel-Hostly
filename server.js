@@ -11,11 +11,8 @@ const bcrypt = require("bcrypt");
 const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
-const { fileURLToPath } = require("url");
-
 // --- 1. CONFIGURAÇÃO INICIAL ---
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// __dirname já está disponível no CommonJS
 const app = express();
 const PORT = process.env.PORT || 3001;
 const saltRounds = 10;
